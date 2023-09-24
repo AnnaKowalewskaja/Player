@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player</title>
-	<link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    HELLO
+
+<body class="body">
+    <header class="header">
+
+        <a href="index.html">
+            <h1 class="header">Player</h1>
+        </a>
+
+    </header>
 
 
-    <script src="scripts/index.js" ></script>
+    <main>
+        <section class="player">
+          
+            <div class="player-btn player-audio">Music</div>
+        </section>
+
+
+
+        <article class="player-block audio active">
+            <div class="container">
+                <div class="audio-container">
+                    <div class="audio-cover">
+                        <img class="audio-img" src="./audio/hello.jpg" alt="cover">
+                    </div>
+                    <h3 class="audio-header">Go on</h3>
+                    <audio class="audio-player" src="audio/hello.mp3"></audio>
+                </div>
+            </div>
+            <footer class="footer-fix audio-footer">
+                <nav class="audio-navigation">
+                    <div class="audio-btns">
+                        <button class="audio-button audio-button__prev "><img src="./svg/backward.png"
+                                alt="backward"></button>
+                        <button class="audio-button audio-button__play "><img src="./svg/play.png" alt="play"></button>
+                        <button class="audio-button audio-button__next "><img src="./svg/forward.png"
+                                alt="forward"></button>
+                    </div>
+                    <span class="audio-time audio-time__passed">00:00</span>
+                    <div class="audio-progress">
+                        <div class="audio-progress__timing"></div>
+                    </div>
+                    <span class="audio-time audio-time__total">00:00</span>
+                </nav>
+            </footer>
+        </article>
+
+    </main>
+    <footer class="temp">
+        <h2 class="temp__header">
+           It's a player for <a class="temp__link " href="https://rs.school/js-stage0/">JS course</a> :)
+        </h2>
+        <img class="temp__img" src="svg/rs_school_js.svg" alt="logo">
+    </footer>
+
+
+
+    <script src="scripts/index.js"></script>
 </body>
+
 </html>
