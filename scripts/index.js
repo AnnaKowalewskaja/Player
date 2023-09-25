@@ -41,8 +41,8 @@ audioNavigation.addEventListener('click', event => {
     const target = event.target;
     if (target.classList.contains('audio-button__play')) {
         audio.classList.toggle('play');
-        audioButtonPlay.classList.toggle('fa-play');
-        audioButtonPlay.classList.toggle('fa-pause');
+        audioButtonPlay.classList.toggle('audio-button__play');
+        audioButtonPlay.classList.toggle('audio-button__pause');
         if (audioPlayer.paused) {
             audioPlayer.play();
         } else {
