@@ -22,8 +22,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a:hover{
-  transition:$main_animation;
+
+a:hover {
+  transition: $main_animation;
 }
 
 h1,
@@ -44,7 +45,7 @@ ul {
 @import 'audio';
 
 
-.body{
+.body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -64,19 +65,22 @@ ul {
   flex-direction: column;
 }
 
-.temp__header{
-margin-bottom: 1rem;
-font-size: 2rem;
-font-weight: normal;
-}
-.temp__img{
-  max-width: 7rem;
-  
+.temp__header {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: normal;
 }
 
-.temp__link:hover{
-color:#1e30f586;
+.temp__img {
+  max-width: 7rem;
+
 }
+
+.temp__link:hover {
+  color: #1e30f586;
+}
+
 .container {
   min-width: 90rem;
   margin: 0 auto;
@@ -93,9 +97,7 @@ color:#1e30f586;
 }
 
 .header {
-  padding-top: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .player {
